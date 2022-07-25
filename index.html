@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <title>Particleground demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css" />
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <!-- remember, jQuery is completely optional -->
+  <!-- <script type='text/javascript' src='js/jquery-1.11.1.min.js'></script> -->
+  <script type='text/javascript' src='./jquery.particleground.js'></script>
+  <script type='text/javascript' src='js/demo.js'></script>
+<style>
+
+  table{
+    width: 100%;
+  }
+  .welcome{
+
+    font-size: 32px;
+  }
+  a{text-decoration: none ;
+  color: aqua;}
+  input,button{
+
+    background: rgba(255, 255, 255, 0.78);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.115);
+border: none;
+outline: none;
+padding: 10px;
+margin: 6px;
+  }
+ 
+</style>
+
+</head>
+
+<body>
+
+<div id="particles">
+  <div id="intro">
+    <h1 class="welcome">welcome in localstorage bookmars</h1>
+    <div class="thecenter">
+     <div class="theform">
+     <input type="text" id="proname" placeholder="SITE NAME"><br>
+     <input type="text" id="price" placeholder="URL"><br>
+     <button onclick="addproduct()" id="addandup" class="bluebox">ADD</button>
+     <button onclick="clearNow()">CleaR All N0W</button>
+   </div>
+   <div >
+     <h3 id="errorss"></h3>
+   </div>
+     <table  cellspacing="0">
+    <thead>
+     <th>id</th>
+      <th>NAME_OF_SITE</th>
+      <th>THE LINK</th>
+      <th>REMOVE</th>
+      <th>UP_DATE</th>
+    </thead> 
+    <tbody id="thebodyoftable">
+      
+    </tbody>
+   </table>
+   
+   
+   
+   </div>
+   
+  </div>
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
