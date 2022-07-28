@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', function () {
 // jQuery plugin example:
 $(document).ready(function() {
   $('#particles').particleground({
-    dotColor: '#5cbdaa',
-    lineColor: '#5cbdaa'
+    dotColor: '#578a00',
+    lineColor: '#578a00'
   });
   $('.intro').css({
     'margin-top': -($('.intro').height() / 2)
